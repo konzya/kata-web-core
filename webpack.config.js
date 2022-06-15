@@ -15,7 +15,7 @@ module.exports = {
   },
 
   // Source maps для удобства отладки
-  devtool: "",
+  devtool: "source-map",
 
   module: {
     rules: [
