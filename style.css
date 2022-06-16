@@ -664,6 +664,7 @@ html {
       display: table;
       width: 100%; } }
   .table__caption {
+    display: block;
     caption-side: bottom;
     max-width: 500px;
     text-align: left;
