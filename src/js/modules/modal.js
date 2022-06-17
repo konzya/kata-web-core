@@ -15,7 +15,8 @@ export function modalInit() {
   for (let modal of modals) {
     let buttons = document.querySelectorAll(modal.dataset.button)
     let modalContent = modal.firstElementChild;
-    let closeButtons = modalContent.querySelectorAll('.button--type--close')
+    let closeButtons = modalContent.querySelectorAll('.button--type--close');
+
 
     function closeModal() {
       modal.classList.remove('modal--open');
