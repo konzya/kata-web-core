@@ -12,7 +12,7 @@
   transition: opacity 0.5s, visibility 0s 0.5s;
   background-color: rgba($color: white, $alpha: 0.96);
 
-  &--menu {
+  &[data-button=".button--type--burger"] {
     justify-content: flex-start;
 
     @media (min-width: $dekstop) {

@@ -39,7 +39,7 @@
     justify-content: space-between;
   }
 
-  &__button--type--close {
+  &__close {
     @media (min-width: $dekstop) {
       display: none;
     }

@@ -10,7 +10,7 @@
   transform: translateX(120%);
   transition: transform 0.5s;
 
-  &__button--type--close {
+  &__close {
     margin-top: 24px;
     margin-left: 16px;
 
@@ -98,7 +98,7 @@
     }
   }
 
-  &__button--type--submit {
+  &__submit {
     @include margin-adaptive;
     align-self: flex-end;
     margin-bottom: 40px;

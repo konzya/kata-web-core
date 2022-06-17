@@ -45,6 +45,10 @@ export function modalInit() {
         modal.classList.add('modal--open');
         html.classList.add('page--freeze');
         modalCounter++;
+        let input = modalContent.querySelector('input:nth-of-type(1)');
+        if (input){
+          setTimeout(() => input.focus(), 400);
+        }
       })
     }
 
@@ -53,6 +57,15 @@ export function modalInit() {
     }
 
     modal.addEventListener('click', closeModal);
+    document.addEventListener('keydown', function(event) {
+
+      if (event.key === 'Escape' && modal.classList.contains('modal--open')) {
+        if (modal.dataset.button === '.button--type--burger' && modalCounter >= 2){
+          return ;
+        }
+        closeModal();
+      }
+    })
 
     modalContent.addEventListener('click', function (event) {
       event.stopPropagation();
