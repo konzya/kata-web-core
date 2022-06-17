@@ -1026,6 +1026,7 @@ html {
   flex-direction: column; }
 
 .modal {
+  overflow-y: auto;
   display: flex;
   position: fixed;
   justify-content: flex-end;
@@ -1048,7 +1049,8 @@ html {
         height: auto;
         width: auto;
         z-index: auto;
-        transition: none; } }
+        transition: none;
+        overflow-y: visible; } }
   .modal--open {
     visibility: visible;
     overflow-x: hidden;
